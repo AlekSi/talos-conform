@@ -17,7 +17,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/google/go-github/github"
+	"github.com/google/go-github/v37/github"
 
 	"github.com/talos-systems/conform/internal/git"
 )

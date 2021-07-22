@@ -1,7 +1,7 @@
 SHA ?= $(shell git describe --match=none --always --abbrev=8)
 TAG ?= $(shell git describe --tag --always)
 
-GOLANG_IMAGE ?= golang:1.14
+GOLANG_IMAGE ?= golang:1.16
 
 COMMON_ARGS := -f ./Dockerfile --build-arg GOLANG_IMAGE=$(GOLANG_IMAGE) --build-arg SHA=$(SHA) --build-arg TAG=$(TAG) .
 
